@@ -223,9 +223,12 @@ p {
 /* ---------------------------------------- */
 /* what are we doing */
 /* ---------------------------------------- */
+.what-are-we-doing .conteiner {
+  padding-bottom: 94px;
+}
 .what-are-we-doing-list {
   display: flex;
-  padding-bottom: 94px;
+
   text-align: center;
   justify-content: center;
 }
@@ -248,6 +251,10 @@ p {
 /* ---------------------------------------- */
 /* team */
 /* ---------------------------------------- */
+.team .conteiner {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .team {
   margin-left: auto;
   margin-right: auto;
@@ -297,26 +304,21 @@ p {
 .team-foto {
   padding-bottom: 30px;
 }
-.team .conteiner {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .team-social-link:not(:last-child) {
   margin-right: 10px;
 }
 /* ---------------------------------------- */
 /* clients */
 /* ---------------------------------------- */
+.clients .conteiner {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
 .clients-list {
   display: flex;
   justify-content: center;
   cursor: pointer;
 }
-.clients .conteiner {
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
-
 .clients-item {
   border: 1px solid #afb1b8;
   box-sizing: border-box;
@@ -337,6 +339,11 @@ p {
 /* ---------------------------------------- */
 /* foooter */
 /* ---------------------------------------- */
+.footer .conteiner {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .footer {
   max-width: 1600px;
   background-color: #2f303a;
@@ -346,11 +353,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
 }
-.footer .conteiner {
-  display: flex;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+
 .footer-logo {
   margin-bottom: 20px;
   font-family: var(--logo-font);
