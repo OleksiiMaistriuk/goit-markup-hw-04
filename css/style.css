@@ -61,8 +61,6 @@ p {
 }
 .portfolio-filter-button:hover,
 .portfolio-filter-button:focus,
-.clients-item:hover,
-.clients-item:focus,
 .footer-center-social-link:hover,
 .footer-center-social-link:focus,
 .footer-address-link:hover,
@@ -137,16 +135,21 @@ p {
 /* ---------------------------------------- */
 /* hero */
 /* ---------------------------------------- */
-.overlay {
-  min-width: 1600px;
+.hero {
+  max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../image/фон/герой-фон.jpg);
-  background-size: contain;
+  background-color: var(--text-white-theme-color);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../image/фон/герой-фон.jpg);
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: var(--text-white-theme-color), contain;
 }
 .hero-title {
   font-weight: 900;
@@ -183,6 +186,7 @@ p {
 /* our nations */
 /* ---------------------------------------- */
 .our-nations .conteiner {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .our-nations-title {
@@ -245,6 +249,15 @@ p {
 /* ---------------------------------------- */
 /* team */
 /* ---------------------------------------- */
+.team {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  background-color: var(--button-background-color);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .team-title {
   margin-bottom: 50px;
 }
