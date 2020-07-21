@@ -61,8 +61,8 @@ p {
 }
 .portfolio-filter-button:hover,
 .portfolio-filter-button:focus,
-.client-item-link:hover,
-.client-item-link:focus,
+.clients-item:hover,
+.clients-item:focus,
 .footer-center-social-link:hover,
 .footer-center-social-link:focus,
 .footer-address-link:hover,
@@ -137,7 +137,17 @@ p {
 /* ---------------------------------------- */
 /* hero */
 /* ---------------------------------------- */
-
+.overlay {
+  min-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../image/фон/герой-фон.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--text-white-theme-color), contain;
+}
 .hero-title {
   font-weight: 900;
   font-size: 26px;
@@ -145,7 +155,7 @@ p {
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
-  /* color: var(--text-dark-theme-color); */
+  color: var(--text-dark-theme-color);
   margin-bottom: 30px;
   padding-top: 200px;
 }
@@ -282,12 +292,13 @@ p {
 .clients-list {
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
-
 .clients .conteiner {
   padding-bottom: 94px;
   padding-top: 94px;
 }
+
 .clients-item {
   border: 1px solid #afb1b8;
   box-sizing: border-box;
@@ -308,13 +319,19 @@ p {
 /* ---------------------------------------- */
 /* foooter */
 /* ---------------------------------------- */
-/* .footer-lefr .footer-logo {
-  color: var(--text-dark-theme-color); 
-} */
+.footer {
+  max-width: 1600px;
+  height: 252px;
+  background-color: #2f303a;
+  margin-right: auto;
+  margin-left: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .footer .conteiner {
   display: flex;
   padding-top: 60px;
-  background-color: #2f303a;
 }
 .footer-logo {
   margin-bottom: 20px;
@@ -371,6 +388,7 @@ p {
   cursor: pointer;
   line-height: 1.6;
   background-color: var(--button-background-color);
+  border: none;
 }
 .portfolio-filter-list {
   display: flex;
