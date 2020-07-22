@@ -344,7 +344,8 @@ p {
   justify-content: center;
   cursor: pointer;
 }
-.clients-item {
+.clients-item-link {
+  display: inline-block;
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
@@ -353,14 +354,17 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  fill: var(--social-link-color);
 }
-.clients-item:hover,
-.clients-item:focus {
+.clients-item-link:hover,
+.clients-item-link:focus {
+  fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
+
 /* ---------------------------------------- */
 /* foooter */
 /* ---------------------------------------- */
