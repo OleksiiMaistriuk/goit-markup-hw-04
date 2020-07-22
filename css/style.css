@@ -196,20 +196,32 @@ p {
   display: flex;
   justify-content: center;
 }
-.our-nations-item {
-  max-width: 270px;
+.our-nations-item::before {
+  content: '';
+  width: 270px;
+  height: 120px;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: var(--button-background-color);
+  margin-bottom: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.our-nations-item:ntn-child(1) ::before {
+  background-image: url('../image/наши-качества/антенна.svg');
 }
 .our-nations-item:not(:last-child) {
   margin-right: 30px;
 }
-.our-nations-picture {
-  display: inline-block;
+/* .our-nations-picture {
+
   text-align: center;
   padding: 25px 100px;
-  background-color: var(--button-background-color);
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
+
+ 
+
+} */
 .our-nations-text {
   font-size: 14px;
   line-height: 1.7;
