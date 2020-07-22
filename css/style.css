@@ -204,24 +204,26 @@ p {
   border-radius: 4px;
   background-color: var(--button-background-color);
   margin-bottom: 30px;
-  background-size: contain;
+  background-size: 70px, 70px, contain;
   background-repeat: no-repeat;
   background-position: center;
+  padding: 25px 100px;
 }
-.our-nations-item:ntn-child(1) ::before {
-  background-image: url('../image/наши-качества/антенна.svg');
+.our-nations-item:nth-child(1)::before {
+  background-image: url(../image/наши-качества/антенна.svg);
+}
+.our-nations-item:nth-child(2)::before {
+  background-image: url(../image/наши-качества/часы.svg);
+}
+.our-nations-item:nth-child(3)::before {
+  background-image: url(../image/наши-качества/диаграмма.svg);
+}
+.our-nations-item:nth-child(4)::before {
+  background-image: url(../image/наши-качества/астронавт.svg);
 }
 .our-nations-item:not(:last-child) {
   margin-right: 30px;
 }
-/* .our-nations-picture {
-
-  text-align: center;
-  padding: 25px 100px;
-
- 
-
-} */
 .our-nations-text {
   font-size: 14px;
   line-height: 1.7;
@@ -327,11 +329,11 @@ p {
   cursor: pointer;
 }
 .clients-item {
+  width: 170px;
+  height: 90px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-  width: 170px;
-  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -385,12 +387,40 @@ p {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-center {
-  /* max-width: 206px; */
   margin-right: 94px;
 }
-.footer-center-social-link:not(:last-child) {
-  padding-right: 10px;
+.footer-center-social-link {
+  display: flex;
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--text-white-theme-color);
+  background-size: 22px, contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
+.footer-center-social-link:hover,
+.footer-center-social-link:focus {
+  background-color: var(--accent-color);
+}
+.instagram {
+  background-image: url(../image/футер-соцсети/instagram1.svg);
+}
+.twitter {
+  background-image: url(../image/футер-соцсети/twitter2.svg);
+}
+.facebook {
+  background-image: url(../image/футер-соцсети/facebook3.svg);
+}
+.linkedin {
+  background-image: url(../image/футер-соцсети/linkedin4.svg);
+}
+.footer-center-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .footer-center-list {
   display: flex;
 }
