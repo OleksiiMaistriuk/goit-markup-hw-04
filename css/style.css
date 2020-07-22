@@ -389,6 +389,9 @@ p {
 .footer-center {
   margin-right: 94px;
 }
+.footer-center-item:not(:last-child) {
+  margin-right: 10px;
+}
 .footer-center-social-link {
   display: flex;
   display: block;
@@ -417,10 +420,6 @@ p {
 .linkedin {
   background-image: url(../image/футер-соцсети/linkedin4.svg);
 }
-.footer-center-item:not(:last-child) {
-  margin-right: 10px;
-}
-
 .footer-center-list {
   display: flex;
 }
