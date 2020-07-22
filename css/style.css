@@ -16,6 +16,7 @@ Html {
   --accent-color: #2196f3;
   --address-dark-theme-color: rgba(255, 255, 255, 0.6);
   --button-background-color: #f5f4fa;
+  --social-link-color: #afb1b8;
 }
 /* ---------------------------------------- */
 /* general */
@@ -301,7 +302,6 @@ p {
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .team-social-link {
   display: block;
   width: 44px;
@@ -312,9 +312,18 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--social-link-color);
+}
+.team-social-link-picture {
+  width: 20px;
+  height: 20px;
 }
 .team-social-link:hover,
-.team-social_link:focus {
+.team-social-link:focus {
+  fill: var(--text-dark-theme-color);
   background-color: var(--accent-color);
 }
 .team-social-item:not(:last-child) {
