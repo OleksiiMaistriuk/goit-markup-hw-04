@@ -85,13 +85,22 @@ p {
   display: flex;
   align-items: center;
 }
+.navigation-link-logo {
+  margin-right: 85px;
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--title-text-color);
+}
+.navigation-link-logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .navigation-list,
 .navigation-adress,
 .navigation-address-list {
   display: flex;
-}
-.navigation-address-list {
-  align-items: center;
 }
 .navigation-address-list:not(:last-child) {
   margin-right: 30px;
@@ -117,25 +126,11 @@ p {
   align-items: center;
 }
 .navigation-social-link-picture {
-  text-decoration: none;
-  padding: 0;
   margin-right: 10px;
 }
 
 .navigation-list-item:not(:last-child) {
   margin-right: 50px;
-}
-.navigation-link-logo {
-  margin-right: 85px;
-  font-family: var(--logo-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  color: var(--title-text-color);
-}
-.navigation-link-logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 .footer-logo .web,
 .navigation-link-logo .web {
@@ -179,7 +174,6 @@ p {
   letter-spacing: 0.06em;
   color: var(--text-dark-theme-color);
   background-color: var(--accent-color);
-  display: inline-block;
   border-radius: 4px;
   border-color: var(--accent-color);
   padding: 10px 32px;
@@ -205,7 +199,6 @@ p {
 }
 .our-nations-list {
   display: flex;
-  justify-content: center;
 }
 .our-nations-picture {
   width: 70px;
@@ -216,7 +209,6 @@ p {
   width: 270px;
   height: 120px;
   background-color: var(--button-background-color);
-  display: inline-block;
   border-radius: 4px;
   display: flex;
   justify-content: center;
@@ -310,11 +302,9 @@ p {
 }
 .team-social-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 .team-social-link {
-  display: block;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -352,11 +342,9 @@ p {
 }
 .clients-list {
   display: flex;
-  justify-content: center;
   cursor: pointer;
 }
 .clients-item-link {
-  display: inline-block;
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
