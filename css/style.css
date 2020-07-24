@@ -413,6 +413,11 @@ p {
 .footer-center {
   margin-right: 94px;
 }
+.footer-center-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .footer-center-item:not(:last-child) {
   margin-right: 10px;
 }
@@ -426,6 +431,10 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--text-dark-theme-color);
 }
 .footer-center-social-link:hover,
 .footer-center-social-link:focus {
@@ -434,6 +443,10 @@ p {
 
 .footer-center-list {
   display: flex;
+}
+.footer-center-social-link-picture {
+  width: 20px;
+  height: 20px;
 }
 .footer-right-title,
 .footer-center-title {
