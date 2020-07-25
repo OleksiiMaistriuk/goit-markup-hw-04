@@ -425,7 +425,7 @@ p {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--text-white-theme-color);
+  background-color: rgba(255, 255, 255, 0.1);
   background-size: 22px, contain;
   background-position: center;
   background-repeat: no-repeat;
