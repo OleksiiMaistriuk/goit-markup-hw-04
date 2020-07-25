@@ -69,9 +69,7 @@ p {
 .team-social-link:hover,
 .team-social-link:focus,
 .navigation-list-link:hover,
-.navigation-list-link:focus,
-.navigation-address-link:focus,
-.navigation-address-link:hover {
+.navigation-list-link:focus {
   color: var(--accent-color);
 }
 /* ---------------------------------------- */
@@ -128,7 +126,11 @@ p {
 .navigation-social-link-picture {
   margin-right: 10px;
 }
-
+.navigation-address-link:focus,
+.navigation-address-link:hover {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
 .navigation-list-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -449,7 +451,7 @@ p {
 }
 .footer-right-title,
 .footer-center-title {
-  margin-top: 17px;
+  margin-top: 12px;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
