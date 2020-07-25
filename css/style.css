@@ -69,10 +69,10 @@ p {
 .team-social-link:hover,
 .team-social-link:focus,
 .navigation-list-link:hover,
-.navigation-list-link:focus .navigation-address-link:focus,
+.navigation-list-link:focus,
+.navigation-address-link:focus,
 .navigation-address-link:hover {
   color: var(--accent-color);
-  fill: var(--accent-color);
 }
 /* ---------------------------------------- */
 /* header */
